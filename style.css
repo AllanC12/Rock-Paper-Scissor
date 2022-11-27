@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.player {
+  width: 200px;
+  height: 200px;
+}
+
+.oponent {
+  width: 200px;
+  height: 200px;
+}
+
+.player > img, .oponent > img {
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.4;
+}
+
+.result {
+  width: 400px;
+  height: 200px;
+  margin-top: 10%;
+ }
+
+.result img {
+   animation-name: bounce;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: 90px;
+}
+
+@keyframes bounce {
+  0% {
+     left: 100px;
+    top: 0;
+  }
+
+  100% {
+     left: 100px;
+    top: 400px;
+  }
+}
